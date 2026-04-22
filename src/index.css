@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;500;600;700&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
+
+:root {
+  --primary: #ff6b6b;
+  --secondary: #4ecdc4;
+  --dark: #2d3436;
+  --light: #f8f9fa;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+}
+
+/* Navbar */
+.navbar {
+  background: rgba(255, 255, 255, 0.95) !important;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+.navbar-brand {
+  font-weight: bold;
+  color: var(--primary) !important;
+  font-size: 1.5rem;
+}
+.nav-link {
+  color: var(--dark) !important;
+  font-weight: 500;
+  transition: color 0.3s;
+  cursor: pointer;
+}
+.nav-link:hover, .nav-link.active {
+  color: var(--primary) !important;
+}
+
+/* Carousel */
+.carousel-section {
+  margin: 2rem 0;
+}
+.carousel-item {
+  height: 500px;
+}
+.carousel-item img {
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.7);
+}
+.carousel-caption {
+  background: rgba(0,0,0,0.5);
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+/* Registration */
+.registration-section {
+  background: white;
+  padding: 3rem;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  margin: 2rem 0;
+}
+.form-control:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 0.2rem rgba(255, 107, 107, 0.25);
+}
+.btn-register {
+  background: #ff4f4f;
+  color: white;
+  border: none;
+  padding: 0.8rem 2rem;
+  border-radius: 25px;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+.btn-register:hover {
+  background: #ff5252;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(255, 107, 107, 0.3);
+  color: white;
+}
+
+/* Table */
+.table-section {
+  background: white;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  margin: 2rem 0;
+}
+.table {
+  margin-bottom: 0;
+}
+.table thead {
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  color: white;
+}
+
+/* Recipe Card */
+.recipe-card {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: all 0.3s;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  margin-bottom: 2rem;
+}
+.recipe-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+.recipe-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+.recipe-card-body {
+  padding: 1.5rem;
+}
+.recipe-title {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: var(--dark);
+  margin-bottom: 0.5rem;
+}
+.recipe-meta {
+  color: #666;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+.btn-apply {
+  background: var(--secondary);
+  color: white;
+  border: none;
+  padding: 0.6rem 1.5rem;
+  border-radius: 20px;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+.btn-apply:hover {
+  background: #45b8af;
+  transform: scale(1.05);
+  color: white;
+}
+
+/* Alert */
+.alert-custom {
+  position: fixed;
+  top: 80px;
+  right: 20px;
+  z-index: 9999;
+  min-width: 300px;
+  animation: slideIn 0.5s;
+}
+@keyframes slideIn {
+  from { transform: translateX(400px); opacity: 0; }
+  to   { transform: translateX(0); opacity: 1; }
+}
+
+/* Footer */
+footer {
+  background: var(--dark);
+  color: white;
+  padding: 3rem 0 1rem;
+  margin-top: 3rem;
+}
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 0.5rem;
+  transition: color 0.3s;
+}
+.footer-links a:hover {
+  color: var(--primary);
+}
+.social-icons a {
+  color: white;
+  font-size: 1.5rem;
+  margin-right: 1rem;
+  transition: color 0.3s;
+}
+.social-icons a:hover {
+  color: var(--primary);
+}
+.team-mate a {
+  font-size: 0.7rem;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+/* Section Title */
+.section-title {
+  color: white;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 2rem 0;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+/* Add Recipe page */
+.btn-custom {
+  background: linear-gradient(135deg, #ff6b6b, #ff5252);
+  color: white;
+  border: none;
+  padding: 0.8rem 2rem;
+  border-radius: 30px;
+  font-weight: 700;
+}
+.btn-custom:hover {
+  transform: translateY(-2px);
+  color: white;
+}
+.page-header {
+  background: linear-gradient(135deg, rgba(0,0,0,0.7), rgba(0,0,0,0.5)),
+    url('https://images.unsplash.com/photo-1466637574441-749b8f19452f?auto=format&fit=crop&w=1600&q=80');
+  background-size: cover;
+  background-position: center;
+  padding: 5rem 0;
+  text-align: center;
+}
